@@ -1,40 +1,39 @@
-SMS Spam Detection Using Machine Learning
 
-Project Overview
+# 📩 SMS Spam Detection Using Machine Learning
 
-This project uses machine learning to classify SMS messages as Spam or Ham (Legitimate).
+## 📌 Project Overview
+This project uses **Machine Learning** to classify SMS messages as **Spam** (unwanted messages) or **Ham** (legitimate messages).
 
-Methodology
+## ⚙️ Project Workflow
+- **Data Preprocessing:** Cleaned and prepared a dataset containing 5,169 SMS messages.
+- **Feature Extraction:** Used **TF-IDF Vectorization** to convert text into numerical features.
+- **Model Training:** Trained four algorithms:
+  - Decision Tree
+  - K-Nearest Neighbors (KNN)
+  - Support Vector Machine (SVM)
+  - Multinomial Naive Bayes
+- **Model Evaluation:** Compared models using accuracy, precision, recall, F1-score, confusion matrices, and execution time.
+- **Parameter Tuning:** Tested different alpha values for Naive Bayes to study their impact on performance.
 
-Loaded and cleaned a dataset containing 5,169 SMS messages.
+## 🏆 Best Model Results
 
-Preprocessed the text and used TF-IDF vectorization to convert messages into numerical features.
+**Support Vector Machine (SVM)** achieved the best performance.
 
-Split the dataset into training and testing sets.
+| Metric | Score |
+|---|---:|
+| Accuracy | **98.26%** |
+| Spam Precision | **98.29%** |
+| Spam Recall | **87.79%** |
+| Spam F1-score | **92.74%** |
 
-Trained four algorithms: Decision Tree, K-Nearest Neighbors (KNN), Support Vector Machine (SVM), and Naive Bayes.
+## 🛠️ Technologies Used
+- **Language:** Python
+- **Platform:** Google Colab
+- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+- **Technique:** TF-IDF Vectorization
 
-Evaluated the models using accuracy, precision, recall, F1-score, confusion matrices, and execution time.
+## ✅ Conclusion
+This project demonstrates how machine learning can automatically identify spam messages. Among the four models tested, **SVM achieved the highest accuracy of 98.26%**.
 
-Conducted a what-if experiment by changing the alpha parameter of Naive Bayes.
-
-Best Model Results
-
-Support Vector Machine (SVM)
-
-Accuracy: 98.26%
-
-Spam F1-score: 92.74%
-
-Technologies Used
-
-Python, Google Colab, Pandas, NumPy, Scikit-learn, TF-IDF, Matplotlib, and Seaborn.
-
-Conclusion
-
-The project demonstrates how machine learning can identify spam messages. SVM achieved the best overall performance among the four models tested.
-
-Google Colab Notebook Link:
-
-         https://colab.research.google.com/drive/16pL6BQ8kbfoupnnxBnMwfhJFsEOmAUnY?usp=sharing
-
+## 🔗 Google Colab Notebook
+          https://colab.research.google.com/drive/16pL6BQ8kbfoupnnxBnMwfhJFsEOmAUnY?usp=sharing
